@@ -1,0 +1,50 @@
+/**
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * $Id$
+ * Universidad de los Andes (Bogotá - Colombia)
+ * Departamento de Ingeniería de Sistemas y Computación 
+ * Licenciado bajo el esquema Academic Free License version 2.1 
+ *
+ * Proyecto Cupi2 (http://cupi2.uniandes.edu.co)
+ * Ejercicio: carShowIncarpasMuscleCar
+ * Autor: Jose Miguel Suarez - 20-ene-2014
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+package uniandes.cupi2.carShowIncarpasMuscleCar.interfaz;
+
+import java.awt.Color;
+
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.border.LineBorder;
+
+/**
+ * Clase donde se coloca la imagen encabezado
+ */
+public class PanelImagen extends JPanel
+{
+
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	/**
+     * Método constructor por defecto. Coloca la imagen del encabezado de la aplicación.
+     */
+    public PanelImagen( )
+    {
+        JLabel imagen = new JLabel( );
+        ImageIcon icono = new ImageIcon( "data/imagenes/titulo.png" );
+        // La agrega a la etiqueta
+        imagen = new JLabel( "" );
+        imagen.setIcon( icono );
+        add( imagen );
+
+        setBackground( Color.WHITE );
+        setBorder( new LineBorder( Color.BLACK ) );
+    }
+
+}
